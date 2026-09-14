@@ -1,0 +1,14 @@
+# Ambiente de desenvolvimento
+aws_region   = "sa-east-1"
+project_name = "f1rsters-tech-challenge-mecanica"
+environment  = "homolog"
+
+# VPC padrao em sa-east-1 (a mesma usada pelo repo de kubernetes)
+vpc_id              = "vpc-0a76831510c31af51"
+private_subnet_ids  = ["subnet-0a41d64838503ddae", "subnet-056e5e5f5a523f937"]
+allowed_cidr_blocks = ["172.31.0.0/16"]
+
+db_name                    = "oficina"
+db_username                = "oficinauser"
+db_backup_retention_period = 1
+# db_password sera carregado do GitHub Secret: DB_PASSWORD
